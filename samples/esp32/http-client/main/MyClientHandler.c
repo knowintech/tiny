@@ -118,7 +118,7 @@ static void _channelActive(ChannelHandler *thiz, Channel *channel)
             break;
         }
 
-        HttpMessage_SetRequest(&request, "GET", "/homekit/instance/device?type=urn:homtkit-spec:device:lightbulb:00000000:arrizo-v1");
+        HttpMessage_SetRequest(&request, "GET", "/homekit/instance/device?type=urn:homekit-spec:device:lightbulb:00000000:arrizo-v1");
         HttpHeader_Set(&request.header, "Accept", "*/*");
         HttpHeader_SetHost(&request.header, "47.93.60.147", 8080);
 

@@ -21,7 +21,7 @@
 TINY_BEGIN_DECLS
 
 
-typedef struct _HttpExchange
+typedef struct
 {
     char                      ip[TINY_IP_LEN];
     uint16_t                  port;

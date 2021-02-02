@@ -2,5 +2,5 @@
 
 ## VisualStudio 2017
 
-ÔÚCMake²úÉúVisualStudio½â¾ö·½°¸Ê±£¬ĞèÒª Add Entry: CMAKE_TOOLCHAIN_FILE = cmake/windows_x86.cmake
+åœ¨CMakeäº§ç”ŸVisualStudioè§£å†³æ–¹æ¡ˆæ—¶ï¼Œéœ€è¦ Add Entry: CMAKE_TOOLCHAIN_FILE = cmake/windows_x86.cmake
 

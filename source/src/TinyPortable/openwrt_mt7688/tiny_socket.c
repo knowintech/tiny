@@ -32,7 +32,7 @@ int tiny_socket_set_block(int fd, bool block)
 TINY_LOR
 int tiny_socket_join_group(int fd, const char *ip, const char *group)
 {
-    int ret = 0;
+    int ret;
 
     LOG_D(TAG, "tiny_socket_join_group: %s group: %s", ip, group);
 
@@ -116,7 +116,7 @@ TinyRet tiny_async_connect(int fd, const char *ip, uint16_t port)
             /* UNP v1, p385, connection is build but not completed. */
             ret = (errno == EINPROGRESS) ? TINY_RET_PENDING : TINY_RET_E_SOCKET_CONNECTING;
         }
-    } while (0);
+    } while (false);
 
     return ret;
 }
@@ -160,7 +160,7 @@ bool tiny_socket_has_error(int fd)
 TINY_LOR
 int tiny_socket_reuse_port(int fd)
 {
-    int ret = 0;
+    int ret;
     int reuseport = 1;
 
     ret = tiny_setsockopt(fd, SOL_SOCKET, SO_REUSEPORT, (char *)&reuseport, sizeof(reuseport));

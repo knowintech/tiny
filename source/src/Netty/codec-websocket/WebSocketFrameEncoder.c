@@ -100,7 +100,7 @@ void WebSocketFrameEncoder_Encode(WebSocketFrame *frame, WebSocketFrameOutput ou
         {
             output((uint8_t *) &header, length - 4, ctx);
         }
-    };
+    }
 
     if (frame->length > 0)
     {

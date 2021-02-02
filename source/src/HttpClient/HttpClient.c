@@ -17,6 +17,7 @@
 #include <codec-http/HttpMessageCodec.h>
 #include "HttpClient.h"
 #include "HttpClientHandler.h"
+#include "HttpExchange.h"
 
 #define TAG     "HttpClient"
 

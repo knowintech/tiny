@@ -111,7 +111,7 @@ void WebSocketFrame_Delete(WebSocketFrame *thiz);
 #define WS_UNSUPPORTED_DATA             1007
 #define WS_POLICY_VIOLATION             1008
 #define WS_CLOSE_TOO_LARGE              1009
-#define WS_MISSING_EXTENTSION           1010
+#define WS_MISSING_EXTENSION            1010
 #define WS_INTERNAL_ERROR               1011
 #define WS_SERVICE_RESTART              1012
 #define WS_TRY_AGAIN_LATER              1013

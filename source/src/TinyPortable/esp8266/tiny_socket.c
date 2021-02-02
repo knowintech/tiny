@@ -116,7 +116,7 @@ TinyRet tiny_async_connect(int fd, const char *ip, uint16_t port)
         {
             ret = (errno == EINPROGRESS) ? TINY_RET_PENDING : TINY_RET_E_SOCKET_CONNECTING;
         }
-    } while (0);
+    } while (false);
 
     return ret;
 }

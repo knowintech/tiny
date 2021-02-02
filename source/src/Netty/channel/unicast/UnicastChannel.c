@@ -77,7 +77,7 @@ static TinyRet UnicastChannel_OnAccess(Channel *thiz, Selector *selector)
             break;
         }
 
-        received = tiny_recvfrom(thiz->fd, buffer->bytes, buffer->size, 0, (struct sockaddr *)&from, &socklen);
+        received = (int) tiny_recvfrom(thiz->fd, buffer->bytes, buffer->size, 0, (struct sockaddr *)&from, &socklen);
         if (received > 0)
         {
             buffer->available = (uint32_t)received;

@@ -103,7 +103,7 @@ TinyRet tiny_url_split(const char *url, char ip[], uint32_t ip_len, uint16_t *po
                 break;
             }
 
-            *port = (*port) * 10 + *p - '0';
+            *port = (uint16_t) ((*port) * 10 + *p - '0');
 
             p++;
         }

@@ -178,7 +178,7 @@ static void soft_ap_init(void)
         station = STAILQ_NEXT(station, next);
     }
 
-    wifi_softap_free_station_info(); // Free it by calling functionss
+    wifi_softap_free_station_info(); // Free it by calling functions
     wifi_softap_dhcps_stop(); // disable soft-AP DHCP server
     struct ip_info info;
     IP4_ADDR(&info.ip, 192, 168, 5, 1); // set IP

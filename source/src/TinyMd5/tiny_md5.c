@@ -1,8 +1,8 @@
 /**
  *
- * Copyright (C) 2007-2012 IGRSLab
+ * Copyright (C) 2007-2012
  *
- * @author ouyangcf@igrslab.com
+ * @author jxfengzi@gmail.com
  * @date   2010-5-25
  *
  * @file   tiny_md5.c

@@ -141,7 +141,7 @@ TinyRet tiny_async_connect(int fd, const char *ip, uint16_t port)
 
     do
     {
-        int err = 0;
+        int err;
         struct sockaddr_in addr;
 
         memset(&addr, 0, sizeof (addr));
@@ -169,7 +169,7 @@ TinyRet tiny_async_connect(int fd, const char *ip, uint16_t port)
                     break;
             }
         }
-    } while(0);
+    } while(false);
 
     return ret;
 }

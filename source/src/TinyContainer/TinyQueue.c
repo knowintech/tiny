@@ -29,7 +29,6 @@ TinyRet TinyQueue_Dispose(TinyQueue *thiz)
     return TinyList_Dispose(thiz);
 }
 
-TINY_LOR
 void * TinyQueue_Head(TinyQueue *thiz)
 {
     return TinyList_GetHead(thiz);
@@ -41,7 +40,6 @@ TinyRet TinyQueue_Push(TinyQueue *thiz, void *data)
     return TinyList_AddTail(thiz, data);
 }
 
-TINY_LOR
 void TinyQueue_Pop(TinyQueue *thiz)
 {
     TinyList_RemoveHead(thiz);

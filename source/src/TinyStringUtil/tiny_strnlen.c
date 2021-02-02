@@ -14,7 +14,6 @@
 
 #include "tiny_strnlen.h"
 
-TINY_LOR
 size_t tiny_strnlen(const char *s, size_t maxlen)
 {
     size_t ret = strlen(s);

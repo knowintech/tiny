@@ -20,7 +20,7 @@
 TINY_BEGIN_DECLS
 
 
-typedef struct _HttpClient
+typedef struct
 {
     Channel         * client;
     Bootstrap         bootstrap;
